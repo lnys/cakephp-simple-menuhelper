@@ -1,0 +1,67 @@
+---
+- 
+  title: Início
+  url:
+    controller: users
+    action: home
+- 
+  title: Usuários
+  url:
+    controller: users
+    action: index
+  children:
+    - 
+      title: Listar
+      url:
+        controller: users
+        action: index
+    - 
+      title: Adicionar
+      url:
+        controller: users
+        action: add
+    - 
+      title: Grupos
+      url:
+        controller: groups
+        action: index
+      children:
+        - 
+          title: Adicionar
+          url:
+            controller: groups
+            action: add
+- 
+  title: Anunciantes
+  url: '#'
+  children:
+    - 
+      title: Listar
+      url: '#'
+    - 
+      title: Imóveis
+      url: '#'
+      children:
+        - 
+          title: Adicionar
+          url: '#'
+        -
+          title: Listar
+          url: '#'
+- 
+  title: Vendas
+  url: '#'
+- 
+  title: Requisições
+  url:
+    controller: requisicoes
+    action: index
+- 
+  title: Notícias
+  url: '#'
+- 
+  title: Banners
+  url: '#'
+- 
+  title: Configurações
+  url: '#'

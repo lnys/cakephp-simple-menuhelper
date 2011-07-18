@@ -6,7 +6,7 @@
  * as input.
  * 
  * @author Weslly Honorato
- * @version 0.5
+ * @version 0.6
  */
 class MenuHelper extends AppHelper {
 	var $helpers = array('Html','Xml');
@@ -17,8 +17,9 @@ class MenuHelper extends AppHelper {
 	 * @return string "Html do menu" 
 	 */
 	function render($group) {
+		App::import('Vendor', 'Menu.Spyc/Spyc');
 		/**
-		 * @todo check if there's a "cleaner" way to get the plugin folder
+		 * @TODO is there a cleaner way to get the plugin folder?
 		 */
 		$menufile=APP.'plugins'.DS.'menu'.DS.'config'.DS.$group.'.yml';
 		if(!file_exists($menufile)) return false;

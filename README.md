@@ -9,4 +9,4 @@ The required yaml markup is pretty easy and clean, you can check a simple exampl
 
 Install
 -------
-You just need to copy the plugin folder to your app plugins dir (usually `/app/plugins`)
+Just copy the plugin folder to your app plugins dir (usually `/app/plugins`)

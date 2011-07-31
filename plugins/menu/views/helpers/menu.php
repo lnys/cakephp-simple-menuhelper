@@ -6,15 +6,15 @@
  * as input.
  * 
  * @author Weslly Honorato
- * @version 0.6
+ * @version 0.6.1
  */
 class MenuHelper extends AppHelper {
-	var $helpers = array('Html','Xml');
+	var $helpers = array('Html');
 	
 	/**
 	 * 
-	 * @param string $group User group
-	 * @return string "Html do menu" 
+	 * @param string $group user group
+	 * @return string html code for menu 
 	 */
 	function render($group) {
 		App::import('Vendor', 'Menu.Spyc/Spyc');
